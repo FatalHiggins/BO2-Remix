@@ -7,24 +7,6 @@
 #include maps/mp/zombies/_zm_pers_upgrades_system;
 
 
-disable_high_round_walkers()
-{
-	level.speed_change_round = undefined;
-}
-
-/*
-* *****************************************************
-*	
-* ********************* Overrides **********************
-*
-* *****************************************************
-*/
-
-set_run_speed_override()
-{
-	self.zombie_move_speed = "sprint";
-}
-
 ai_calculate_health_override( round_number ) //checked changed to match cerberus output
 {
 	if( is_classic() )
